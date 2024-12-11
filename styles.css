@@ -1,0 +1,38 @@
+*{
+}
+
+nav{
+    background-color: grey;
+    min-height: 50px;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-inline: 8px;
+}
+
+nav a{
+    color: darkblue;
+    text-decoration: none;
+    background-color: lightcyan;
+    padding: 4px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+@media(max-width: 800px){
+    nav{
+        justify-content: space-around;
+    }
+    nav a{
+        flex-basis: 100%;
+        text-align: center;
+    }
+}
+
+@media(max-width: 600px){
+    nav{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
